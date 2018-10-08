@@ -1,10 +1,7 @@
-// DO WHATEVER YOU WANT HERE
-
 const createEnumerableProperty = (propertyName) => {return propertyName};
 
 const createNotEnumerableProperty = (propertyName) => Symbol(propertyName);
 
-// не а не отправлять
 const createProtoMagicObject = ( ) => {
 	let object = new Function;
 	object.prototype = Object.getPrototypeOf(object);
@@ -22,15 +19,12 @@ var countForAsync = 0;
 };
 
 const createIncrementer = (result) => {};
-
-// return same argument not earlier than in one second, and not later, than in two
 const returnBackInSecond = (countForAsync) => {
 	return promise = new Promise((resolve, reject) => {
 		setTimeout(function(){
 			resolve(countForAsync)}, 1000)
 	})
 };
-
 
 const getDeepPropertiesCount = () => {};
 const createSerializedObject = () => {};
@@ -47,20 +41,3 @@ exports.returnBackInSecond = returnBackInSecond;
 exports.getDeepPropertiesCount = getDeepPropertiesCount;
 exports.createSerializedObject = createSerializedObject;
 exports.sortByProto = sortByProto;
-
-
-// incrementor();
-// incrementor();
-// incrementor();
-
-// createProtoMagicObject();
-		// const propertyName = 'property';
-  //   const propertyValue = 'value';
-
-  //   const property = createEnumerableProperty(propertyName);
-  //   const object = {};
-
-  //   object[property] = propertyValue;
-
-  //   console.log(createEnumerableProperty(Object.keys(object).length, 1));
-  //   console.log(createEnumerableProperty(object[property], propertyValue));
